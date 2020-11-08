@@ -1,0 +1,57 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: $main-color-light;
+}
+
+.fixed-block {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+
+.section-title {
+  @include font-param($font-size: 30px, $font-weight: 600);
+}
+
+.link {
+  text-decoration: none;
+  color: $main-color-dark;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+
+  width: fit-content;
+
+  padding: 15px;
+
+  @include font-param;
+  text-transform: uppercase;
+
+  background-color: $main-color-dark;
+  color: $main-color;
+
+  &:hover {
+    background-color: $main-color;
+    color: $main-color-dark;
+  }
+}
+
+.text-bold {
+  font-weight: 600;
+}

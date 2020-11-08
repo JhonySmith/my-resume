@@ -1,0 +1,50 @@
+.skills {
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 0;
+
+    list-style-type: none;
+  }
+
+  &__item {
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: 100px auto;
+    }
+
+    &--html::before {
+      background-image: url(../img/html-logo.svg);
+    }
+
+    &--css::before {
+      background-image: url(../img/css-logo.png);
+    }
+
+    &--js::before {
+      background-image: url(../img/javascript-logo.png);
+    }
+
+    &--sass::before {
+      background-image: url(../img/sass-logo.png);
+    }
+
+    &--react::before {
+      background-image: url(../img/react-logo.png);
+    }
+
+    &--gulp::before {
+      background-image: url(../img/gulp-logo.png);
+    }
+
+    &--webpack::before {
+      background-image: url(../img/webpack-logo.png);
+    }
+  }
+}

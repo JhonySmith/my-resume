@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav fixed-block">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#main-info"> Основная информация </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#main-info"> Опыт работы </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#main-info"> Навыки </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link link" href="#main-info"> Сертификаты </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="main-info fixed-block" id="main-info">
+        <img src="./img/photo.jpg" alt="Фотография" class="main-info__photo" />
+        <div class="main-info__text">
+          <p class="main-info__name">Веснин Евгений Ильич</p>
+          <p class="main-info__birth-date">
+            <span class="text-bold">Дата рождения:</span> 22 мая 1991г.
+          </p>
+          <p class="main-info__birth-place">
+            <span class="text-bold">Место рождения:</span> г. Коряжма, Архангельской области
+          </p>
+          <p class="main-info__now-live">
+            <span class="text-bold">Текущее место жительства:</span> г. Ухта, Республика Коми
+          </p>
+        </div>
+      </section>
+      <section class="work-experience fixed-block">
+        <h2 class="section-title">Опыт работы</h2>
+        <table class="work-experience__table">
+          <tr>
+            <th>Период</th>
+            <th>Место работы</th>
+            <th>Должность</th>
+          </tr>
+          <tr>
+            <td>Октябрь 2010 — июль 2015</td>
+            <td>ФГБОУ ВПО "УГТУ"</td>
+            <td>Техник-программист</td>
+          </tr>
+          <tr>
+            <td>Июль 2015 — июнь 2019</td>
+            <td>ООО "ЛУКОЙЛ-Коми"</td>
+            <td>Системный администратор информационно-коммуникационных систем</td>
+          </tr>
+          <tr>
+            <td>Июль 2019 — по настоящее время</td>
+            <td>ООО "ЛУКОЙЛ-Коми"</td>
+            <td>Системный аналитик</td>
+          </tr>
+        </table>
+        <a href="./work-experience.html" class="work-experience__more-button button link"
+          >Подробнее</a
+        >
+      </section>
+      <section class="skills fixed-block">
+        <h2 class="section-title">Навыки</h2>
+        <ul class="skills__list">
+          <li class="skills__item skills__item--html">
+            <span class="visually-hidden">html</span>
+          </li>
+          <li class="skills__item skills__item--css">
+            <span class="visually-hidden">css</span>
+          </li>
+          <li class="skills__item skills__item--js">
+            <span class="visually-hidden">javascript</span>
+          </li>
+          <li class="skills__item skills__item--sass">
+            <span class="visually-hidden">sass</span>
+          </li>
+          <li class="skills__item skills__item--react">
+            <span class="visually-hidden">react</span>
+          </li>
+          <li class="skills__item skills__item--gulp">
+            <span class="visually-hidden">gulp</span>
+          </li>
+          <li class="skills__item skills__item--webpack">
+            <span class="visually-hidden">webpack</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

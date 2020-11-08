@@ -1,0 +1,29 @@
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  @include font-param;
+  text-transform: uppercase;
+
+  list-style-type: none;
+}
+
+.main-nav__link {
+  display: block;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  padding: 10px 5px 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &:hover {
+    position: relative;
+    color: black;
+    border-left-color: black;
+    border-right-color: black;
+    text-decoration: underline;
+  }
+}

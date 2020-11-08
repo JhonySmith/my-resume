@@ -1,0 +1,31 @@
+.work-experience__table {
+  width: 100%;
+  margin-top: 40px;
+
+  border-collapse: collapse;
+
+  @include font-param();
+
+  tr:nth-child(2n) {
+    background-color: #f7f7f7;
+  }
+
+  td,
+  th {
+    padding: 15px;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    font-size: 16px;
+
+    border-left: 1px solid #e6e6e6;
+  }
+}
+
+.work-experience__more-button {
+  margin-top: 20px;
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp",
-    "build": "gulp build"
+    "build": "gulp build",
+    "prettier": "prettier  --write src/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -30,7 +31,8 @@
     "gulp-rename": "2.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
-    "postcss": "8.1.1"
+    "postcss": "8.1.1",
+    "prettier": "2.1.2"
   },
   "dependencies": {}
 }
