@@ -1,0 +1,85 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Evgeniy Vesnin
+    link(rel="stylesheet" href="./css/style.min.css")
+  body
+    header.page-header
+      nav.main-nav.fixed-block
+        ul.main-nav__list
+
+          li.main-nav__item
+            a.main-nav__link.link(
+              href="#main-info"
+            ) Основная информация
+
+          li.main-nav__item
+            a.main-nav__link.link(
+              href="#main-info"
+            ) Опыт работы
+
+          li.main-nav__item
+            a.main-nav__link.link(
+              href="#main-info"
+            ) Навыки
+
+          li.main-nav__item
+            a.main-nav__link.link(
+              href="#main-info"
+            ) Сертификаты
+
+    main.page-main
+      section.main-info.fixed-block#main-info
+        img.main-info__photo(src="./img/photo.jpg" alt="Фотография")
+        div.main-info__text
+          p.main-info__name Веснин Евгений Ильич
+          p.main-info__birth-date
+            span.text-bold Дата рождения:
+            |22 мая 1991г.
+          p.main-info__birth-place
+            span.text-bold Место рождения:
+            |г. Коряжма, Архангельской области
+          p.main-info__now-live
+            span.text-bold Текущее место жительства:
+            |г. Ухта, Республика Коми
+      section.work-experience.fixed-block
+        h2.section-title Опыт работы
+        table.work-experience__table
+          tr
+            th Период
+            th Место работы
+            th Должность
+          tr
+            td Октябрь 2010 — июль 2015
+            td ФГБОУ ВПО "УГТУ"
+            td Техник-программист
+          tr
+            td Июль 2015 — июнь 2019
+            td ООО "ЛУКОЙЛ-Коми"
+            td Системный администратор информационно-коммуникационных систем
+          tr
+            td Июль 2019 — по настоящее время
+            td ООО "ЛУКОЙЛ-Коми"
+            td Системный аналитик
+        a.work-experience__more-button.button.link(
+          href="./work-experience.html"
+          ) Подробнее
+      section.skills.fixed-block
+        h2.section-title Навыки
+        ul.skills__list
+          li.skills__item.skills__item--html
+            span.visually-hidden.html
+          li.skills__item.skills__item--css
+            span.visually-hidden.css
+          li.skills__item.skills__item--js
+            span.visually-hidden.javascript
+          li.skills__item.skills__item--sass
+            span.visually-hidden.sass
+          li.skills__item.skills__item--react
+            span.visually-hidden.react
+          li.skills__item.skills__item--gulp
+            span.visually-hidden.gulp
+          li.skills__item.skills__item--webpack
+            span.visually-hidden.webpack
