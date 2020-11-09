@@ -3,6 +3,7 @@ var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
 
 const htmlMin = require('gulp-htmlmin');
+const gup = require('gulp-pug');
 const sass = require('gulp-sass');
 const csso = require('gulp-csso');
 const postcss = require('gulp-postcss');
@@ -36,6 +37,19 @@ const html = () => {
 
 exports.html = html;
 
+// gup
+const gupHTML = () => {
+  return gulp
+    .src('src/*.gup')
+    .pipe(gup())
+    .pipe(htmlMin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('public'))
+    .pipe(browserSync.stream());
+};
+
+exports.gupHTML = gupHTML;
+
+exports.html = html;
 // scss
 const styles = () => {
   return gulp
@@ -68,11 +82,11 @@ const img = () => {
 exports.copy = copy;
 
 const watcher = () => {
-  gulp.watch('src/*.html', gulp.series('html'));
+  gulp.watch('src/*.gup', gulp.series('gupHTML'));
   gulp.watch('src/style/**/*.scss', gulp.series('styles'));
 };
 
-const build = gulp.series(html, styles, copy, img);
+const build = gulp.series(gupHTML, styles, copy, img);
 
 exports.build = build;
 
